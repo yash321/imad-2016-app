@@ -55,8 +55,8 @@ function createtemplate(data)
     var date=data.date;
     var content=data.content;
 
-var template={
-<html>
+var template=
+`<html>
     <head>
         <title>
             ${title}
@@ -81,10 +81,10 @@ var template={
         </div>
     </body>
     
-</html>
+</html>`
 ;
 return htmltemplate;    
-}
+
 }
 
 app.get('/', function (req, res) {
