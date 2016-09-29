@@ -3,7 +3,7 @@ var element = document.getElementById('maintext');
 element.innerHTML='NEW VALUE';
 var img= document.getElementById('bg');
 var marginleft=0;
-function maoveright(){
+function moveright(){
     marginleft=marginleft+10;
     img.style.marginleft=marginleft+'px';
 }
