@@ -91,7 +91,7 @@ return htmltemplate;
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
-var counter
+var counter=0;
 app.get('/:articleone',function(req,res)
 {var articleName=req.params.articleName;
  res.send(createtemplate(articles[articleName]));
