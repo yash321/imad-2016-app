@@ -62,6 +62,9 @@ var template=
         <meta name="viewport" content="width=device-width" ,initial-scale="1"/>
         <link href="/ui/styles.css" rel="stylesheet"/>
     </head>
+    <title>
+    ${title}
+    </title>
     <body>
         <div class="container">
         <div>
