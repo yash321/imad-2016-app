@@ -2,10 +2,10 @@ console.log('Loaded!');
 var element = document.getElementById('maintext');
 element.innerHTML='NEW VALUE';
 var img= document.getElementById('bg');
-var marginleft=0;
+var marginLeft=0;
 function moveright(){
-    marginleft=marginleft+10;
-    img.style.marginleft=marginleft+'px';
+    marginLeft=marginLeft+10;
+    img.style.marginLeft=marginLeft+'px';
 }
 img.onclick=function(){
     var interval=setInterval(moveright,100);
