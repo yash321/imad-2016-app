@@ -91,13 +91,17 @@ return htmltemplate;
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
-
+var counter=0;
 app.get('/:articleone',function(req,res)
 {var articleName=req.params.articleName;
  res.send(createtemplate(articles[articleName]));
 });
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
+});
+app.get('/counter',function(req,res){
+counter=counter+1;
+res.send(counter.toString());
 });
 app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
