@@ -62,6 +62,9 @@ var template=
         <meta name="viewport" content="width=device-width" ,initial-scale="1"/>
         <link href="/ui/styles.css" rel="stylesheet"/>
     </head>
+    <title>
+    ${title}
+    </title>
     <body>
         <div class="container">
         <div>
@@ -88,7 +91,7 @@ return htmltemplate;
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
-var counter=0;
+var counter
 app.get('/:articleone',function(req,res)
 {var articleName=req.params.articleName;
  res.send(createtemplate(articles[articleName]));
