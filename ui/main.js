@@ -3,7 +3,7 @@ var img= document.getElementById('bg');
 var marginLeft=0;
 var counter=0;
 function moveright(){
-    while(marginLeft!=40)
+    while(marginLeft!=2000)
     {
     marginLeft=marginLeft+5;
     img.style.marginLeft=marginLeft+'px';
