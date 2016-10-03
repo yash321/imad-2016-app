@@ -5,7 +5,7 @@ var counter=0;
 function moveright(){
     while(marginLeft!=2000)
     {
-    marginLeft=marginLeft+5;
+    marginLeft=marginLeft+1;
     img.style.marginLeft=marginLeft+'px';
     }
     
