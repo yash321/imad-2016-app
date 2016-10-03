@@ -31,11 +31,11 @@ button.onclick=function()
   
 };
 var nameInput=document.getElementById('name');
-var name=nameInput.value;
+var name2=nameInput.value;
 var submit=document.getElementById('sub');
 submit.onclick=function()
 {
-  var names=['name 1','name 2','name 3'];
+  var names=[];
   var list='';
   for(var i=0;i<names.length;i++)
   {
