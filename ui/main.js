@@ -3,9 +3,19 @@ var img= document.getElementById('bg');
 var marginLeft=0;
 var counter=0;
 function moveright(){
+    while(marginLeft!=40)
+    {
     marginLeft=marginLeft+5;
     img.style.marginLeft=marginLeft+'px';
-}
+    }
+    if(marginLeft==40)
+    {
+        while(marginLeft!=-40)
+        marginLeft=marginLeft-5;
+        img.style.marginLeft=marginLeft+'px';
+    }
+        
+    }
 img.onclick=function(){
     var interval=setInterval(moveright,50);
     
